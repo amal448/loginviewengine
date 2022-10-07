@@ -1,0 +1,24 @@
+<%- include('header') -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=locals.title ? title:'Login System' %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/style.css">
+    
+</head>
+<body>
+
+<div class="text-center center-div mt-5" id="login">
+    <div class="container w-40  py-5 mt-5">
+        <h1>Welcome to My Home Page</h1>
+        <h3><%=locals.user ? user :"User" %></h3>
+        <a href="/logout" class="btn btn-danger rounded-pill" style="position: absolute;top: 28px; right: 47px; padding: 0 26px; text-align: center;">LogOut</a>
+       </div>
+</div>
+
+<%- include('footer') -%>
